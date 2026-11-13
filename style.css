@@ -1,0 +1,224 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #100b2b, #211052, #452078);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 25px;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    color: #c6b9e8;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.converter-card {
+    background: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(15px);
+    padding: 35px;
+    border-radius: 22px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+}
+
+.small-label {
+    color: #d1a9ff;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.card-heading h1 {
+    font-size: 29px;
+    margin: 12px 0;
+}
+
+.card-heading p {
+    color: #c6b9e8;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 9px;
+    color: #e1d8f7;
+}
+
+input, select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #7960a9;
+    border-radius: 10px;
+    background: #21153e;
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #c69aff;
+}
+
+.currency-section {
+    display: flex;
+    align-items: end;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.currency-box {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+}
+
+.currency-box select {
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.swap-btn {
+    width: 43px;
+    height: 43px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 50%;
+    background: #a66bff;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.swap-btn:hover {
+    transform: rotate(180deg);
+    background: #8744ed;
+}
+
+.convert-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 11px;
+    background: linear-gradient(90deg, #a66bff, #7351ed);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.convert-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(166, 107, 255, 0.3);
+}
+
+.convert-btn:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.result-box {
+    margin-top: 25px;
+    padding: 22px 12px;
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.result-label {
+    color: #c6b9e8;
+    font-size: 13px;
+}
+
+.result-box h2 {
+    font-size: 32px;
+    color: #d6adff;
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+}
+
+#rateInfo {
+    color: #c6b9e8;
+    font-size: 12px;
+}
+
+.status {
+    min-height: 22px;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #ffd78a;
+}
+
+.footer-note {
+    margin-top: 20px;
+    color: #c6b9e8;
+    font-size: 12px;
+}
+
+footer {
+    margin-top: 22px;
+    color: #c6b9e8;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    .converter-card {
+        padding: 22px 16px;
+    }
+
+    .card-heading h1 {
+        font-size: 24px;
+    }
+
+    .currency-section {
+        gap: 7px;
+    }
+
+    .currency-box select {
+        padding: 11px 5px;
+        font-size: 11px;
+    }
+
+    .swap-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 21px;
+    }
+
+    .result-box h2 {
+        font-size: 25px;
+    }
+}
